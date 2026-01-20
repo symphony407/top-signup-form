@@ -1,10 +1,12 @@
-.left-half, .right-half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 200px;
-    overflow-y: auto;      
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.right-panel{
+   grid-column: 2;
+}
+.image-panel img{
+    grid-column: 1;
 }
 
 .top-section{
@@ -28,7 +30,7 @@
    
 
 }
-.footer-button button{
+.form-container button{
     padding: 10px 25px;
     background-color: green;
     border-radius: 8px;
